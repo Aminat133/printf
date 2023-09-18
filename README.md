@@ -1,0 +1,3 @@
+# PRINTF PROJECT
+> This project is done in teams of two
+>> We are going to create our own printf function and handle the conversions, specifiers,...
