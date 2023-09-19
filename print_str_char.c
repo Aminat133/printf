@@ -8,21 +8,22 @@
  */
 int _print_string(va_list args)
 {
-    char *str = va_arg(args, char *);
-    int len = 0;
+	char *str = va_arg(args, char *);
+	int len = 0;
 
-    if (str == NULL)
-        str = "(null)";
+	if (str == NULL)
+	str = "(null)";
 
-    while (*str)
-    {
-        _putchar(*str);
-        str++;
-        len++;
-    }
+	while (*str)
+	{
+	_putchar(*str);
+	str++;
+	len++;
+	}
 
-    return (len);
+	return (len);
 }
+
 /**
  * _print_char - prints a character
  * @args: the va_list containing the character to print
@@ -31,8 +32,10 @@ int _print_string(va_list args)
  */
 int _print_char(va_list args)
 {
-    char c = va_arg(args, int);
-    _putchar(c);
-    return (1);
+	char c = va_arg(args, int);
+
+	_putchar(c);
+
+	return (1);
 }
 
