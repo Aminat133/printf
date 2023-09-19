@@ -26,7 +26,9 @@ int _printf(const char *format, ...)
 				count += _print_char(args);
 			else if (*format == 's')
 				count += _print_string(args);
-	else if (*format == '%')
+			else if (*format == 'd' || *format == 'i')
+				count += _print_int(args);
+		else if (*format == '%')
 	{
 		write(1, "%%", 1);
 				count += 1;
