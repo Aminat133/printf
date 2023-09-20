@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 				count += _print_int(args);
 		else if (*format == '%')
 	{
-		write(1, "%%", 1);
+		write(1, "%", 1);
 				count += 1;
 	}
 			else
