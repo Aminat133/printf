@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 			else if (*format == 'd' || *format == 'i')
 				count += _print_int(args);
 			else if (*format == 'b')
-                                count += _print_binary(args);
+				count += _print_binary(args);
 		else if (*format == '%')
 	{
 		write(1, "%%", 1);
