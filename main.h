@@ -9,6 +9,7 @@ int _print_char(va_list args);
 int _putchar(char c);
 int _print_int_helper(int n);
 int _print_int(va_list args);
+int _print_binary(va_list args);
 #endif
 
 
